@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Blood Bank Management System</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+    
+  </style>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/homepage1.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      
+</head>
+
+
+<body>
+  {% include "navbar.html" %}
+<br>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <br><br><br><br><br><br>
+     
+      
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+    <p class="lead text-center">“Opportunities knock the door sometimes, so don’t let it go and donate blood.”
+      </p>
+  </div>
+
+</body>
+
+</html>
